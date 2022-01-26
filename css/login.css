@@ -1,0 +1,52 @@
+@import url(default.css);
+
+@media screen and (min-width: 800px) {
+    
+}
+
+@media screen and (max-width: 799px){
+    .main-container{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        place-items: center;
+    }
+    
+    .main-container .logo h1{
+        font-size: 4rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .main-container .login-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        gap: 20px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .main-container .login-form form{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        place-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-container .login-form form input{        
+        width: 80%;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 2px 2px 5px #afafaf ;
+        font-size: 20px;
+        padding: 20px
+    }
+
+    .main-container .login-form form input::placeholder{    
+        font-size: 18px;               
+    }
+
+}
